@@ -1,0 +1,27 @@
+{
+  "name": "api-for-study-mock",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test:unit": "jest",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint src/** test/** --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "eslint": "^9.1.0",
+    "express": "^4.19.2",
+    "jest": "23.6.0",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "globals": "^15.0.0",
+    "nodemon": "^3.1.0"
+  }
+}
