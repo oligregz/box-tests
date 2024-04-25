@@ -19,14 +19,12 @@ app.delete('/api/posts/:id', PostController.delete)
 
 const startServer = async () => {
   try {
-    await mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-    console.log('MongoDB: Connection (successful)');
+    await mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+    console.log('MongoDB: Connection (successful)')
     app.listen(PORT, () => console.log(`Huning on port ${PORT}`))
   } catch (error) {
-    console.error(`MongoDB Connection error: ${error}`);
+    console.error(`MongoDB Connection error: ${error}`)
   }
 };
 
-startServer();
-
-  
+startServer()
