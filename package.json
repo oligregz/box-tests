@@ -19,9 +19,16 @@
     "mongodb": "^6.5.0",
     "mongoose": "^8.3.0"
   },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/setupTests.js"
+    ],
+    "testTimeout": 20000
+  },
   "devDependencies": {
-    "@eslint/js": "^9.1.1",
-    "globals": "^15.0.0",
+		"@babel/core": "^7.12.13",
+		"@babel/preset-env": "^7.12.13",
+		"regenerator-runtime": "^0.13.7",
     "nodemon": "^3.1.0"
   }
 }
